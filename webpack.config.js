@@ -3,7 +3,7 @@
 const path = require('path');
 const autoprefixer = require('autoprefixer');
 
-const BUILD_DIR = path.resolve(__dirname, './dist');
+const BUILD_DIR = path.resolve(__dirname, './lib');
 const APP_DIR = path.resolve(__dirname, './src');
 
 const config = {

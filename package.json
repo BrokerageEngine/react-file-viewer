@@ -9,8 +9,11 @@
     "url": "git+https://github.com/plangrid/react-file-viewer.git"
   },
   "scripts": {
+    "prepare": "npm run build",
+    "prebuild": "npm run clean",
     "dev": "webpack -d --watch",
     "build": "webpack -p --progress",
+    "clean": "rm -rf lib",
     "start": "node ./scripts/start.js",
     "lint": "node_modules/.bin/eslint ./src/**/*.jsx",
     "test": "node_modules/.bin/jest --env=jsdom --watch",
